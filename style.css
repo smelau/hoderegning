@@ -1,0 +1,83 @@
+body {
+  /*background-color: #8fd9a9;
+  background: linear-gradient(135deg, #36665c, #7be6cf, #6cccb7);*/
+  background-image: url("bakgrunn1.png");
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  height: 100vh;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page {
+  display: grid;
+  grid-template-columns: 10fr 20fr;
+  grid-template-rows: 80px minmax(100vh, auto);
+  grid-template-areas:
+    "header header"
+    "menu mainContent";
+}
+
+.header {
+  grid-area: header;
+  text-align: center;
+  text-shadow: 8px 8px 18px rgba(0, 0, 0, 0);
+  color: #76849f;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: relative;
+}
+
+.mainContent {
+  grid-area: mainContent;
+  align-content: center;
+}
+
+.menu {
+  grid-area: menu;
+  margin-left: 20px;
+
+  color: #76849f;
+}
+
+.buttonMenu {
+  box-shadow: 3px 4px 0px 0px #899599;
+  background: linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+  background-color: #ededed;
+  border-radius: 15px;
+  border: 1px solid #d6bcd6;
+  display: inline-block;
+  cursor: pointer;
+  color: #000000;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+  padding: 7px 25px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #e1e2ed;
+  margin: 10px;
+  opacity: 0.9;
+}
+.buttonMenu:hover {
+  background: linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+  background-color: #bab1ba;
+}
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+.regnestykker {
+  grid-area: mainContent;
+  margin-top: 60px;
+  margin-left: 120px;
+}
+.tekstMain {
+  grid-area: mainContent;
+  margin-top: 60px;
+  text-align: left;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 25px;
+}
